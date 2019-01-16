@@ -1,0 +1,24 @@
+.firstdiv{
+  color: orange;
+}
+.seconddiv{
+  color: blue;
+}
+#singledout{
+  color: green;
+  text-decoration: line-through;
+}
+/* to select all unordered list next to a h3 heading */
+h3 + ul{
+  /* to select an unordered list close to a h3 tag */
+  border: 4px dotted purple;
+}
+li a{
+  /* to select all a tags inside a list */
+  color: red;
+}
+li a[href ="www.medium.com"]{
+  /* to select a link inside a list */
+  color: blue;
+  border: 5px solid orange
+}

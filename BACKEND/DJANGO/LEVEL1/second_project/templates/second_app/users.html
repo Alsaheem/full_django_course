@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+  </head>
+  <body>
+    <h1>Hello ive done it again and again and again</h1>
+
+    <div class="lol">
+      {% if users_record  %}
+      <h2>list of all the users arranges in a list</h2>
+
+      <ol>
+        {% for usr in users_record %}
+        <li>User_info</li>
+        <ul>
+          <div class="">
+            <li>first_name : {{ usr.first_name }}</li>
+            <li>last_name : {{ usr.last_name }}</li>
+            <li>email : {{ usr.email }}</li>
+          </div>
+        </ul>
+        {% endfor %}
+      </ol>
+
+      {% else %}
+        <p>no users records found!!!</p>
+      {% endif %}
+
+    </div>
+  </body>
+</html>

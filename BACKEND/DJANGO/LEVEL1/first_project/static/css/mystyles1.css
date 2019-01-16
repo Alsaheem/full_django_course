@@ -1,0 +1,10 @@
+h1{
+  color: blue;
+  text-align: center;
+  background-color: red;
+}
+
+table,th,td{
+  border: 2px solid black;
+  text-align: center;
+}

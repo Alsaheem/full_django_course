@@ -1,0 +1,16 @@
+#start new project
+django-admin startproject project_name
+
+go into the directory of the second_project and create an app with the command
+python manage.py startapp appname
+
+
+check if the setting is aware of the templates directory
+add the password hashers in a list if oure doing authorization
+
+add app to  list of installed APP_DIRS
+
+#migrate
+python manage.py migrate
+
+python manage.py makemigrations basic_app

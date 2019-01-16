@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AccessRecord webpages_list</title>
+    <link rel="stylesheet" href="{% static "css/mystyles1.css" %}">
+  </head>
+  <body>
+    <h1><strong> Hello welcome to Django level two!!! </strong></h1>
+    <h2>here are your access records</h2>
+    <!-- {{ insert_me }} -->
+    <div class="djangtwo">
+      {% if accessrecord  %}
+      <table>
+        <thead>
+          <th>Site Name</th>
+          <th>Date accesssed</th>
+        </thead>
+
+        {% for acc in accessrecord %}
+        <tr>
+          <td>{{ acc.name }}</td>
+          <td>{{ acc.date }}</td>
+        </tr>
+        {% endfor %}
+
+      </table>
+
+      {% else %}
+        <p>no access records found!!!</p>
+      {% endif %}
+
+    </div>
+  </body>
+</html>

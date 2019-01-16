@@ -1,0 +1,17 @@
+body{
+  /* background: grey; */
+  background: url(temp.png)
+}
+div{
+  background: pink;
+  border-color: blue;
+  border-width: 10px;
+  border-style: double;
+}
+p{
+  color: green;
+}
+span{
+  background: red;
+  color: black;
+}
